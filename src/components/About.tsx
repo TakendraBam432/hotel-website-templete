@@ -1,8 +1,6 @@
 import { Award, Heart, Star } from "lucide-react";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-secondary">
+  return <section id="about" className="bg-secondary mx-0 my-0 py-[34px] px-0">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -98,8 +96,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
