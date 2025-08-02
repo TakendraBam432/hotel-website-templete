@@ -2,6 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users } from "lucide-react";
 import heroImage from "@/assets/hero-hotel.jpg";
 
+// Add hotelInfo object before the handleWhatsAppBooking function
+const hotelInfo = {
+  name: "Hotel Dev Inn", // Replace with your hotel name
+  whatsappNumber: "+977 9709153772", // Replace with your WhatsApp number (with country code, no + sign)
+};
 // WhatsApp booking function
 const handleWhatsAppBooking = () => {
     const message = encodeURIComponent("Hi! I'd like to make a reservation at " + hotelInfo.name);
