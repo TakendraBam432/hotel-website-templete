@@ -43,7 +43,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-playfair font-semibold mb-6">Services</h3>
             <ul className="space-y-3">
-              {["Concierge", "Room Service", "Valet Parking", "Airport Transfer", "Business Center", "Pet Services"].map(service => <li key={service}>
+              {["Concierge", "Room Service", "Valet Parking", "Business Center"].map(service => <li key={service}>
                   <a href="#" className="text-premium-navy-foreground/80 hover:text-luxury-gold transition-colors duration-300">
                     {service}
                   </a>
@@ -58,18 +58,18 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-luxury-gold mt-1 flex-shrink-0" />
                 <div className="text-premium-navy-foreground/80">
-                  <div>123 Luxury Avenue</div>
-                  <div>Downtown District</div>
-                  <div>City, State 12345</div>
+                  <div>Hotel Dev Inn</div>
+                  <div>sudurpashim</div>
+                  <div>Dhangadhi</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-luxury-gold" />
-                <span className="text-premium-navy-foreground/80">+1 (555) 123-4567</span>
+                <span className="text-premium-navy-foreground/80">+977 9709153772</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-luxury-gold" />
-                <span className="text-premium-navy-foreground/80">info@hotelify.com</span>
+                <span className="text-premium-navy-foreground/80">info@hoteldevinn.com</span>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ const Footer = () => {
         <div className="border-t border-premium-navy-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-premium-navy-foreground/60 text-sm mb-4 md:mb-0">
-              © 2024 Hotelify. All rights reserved. | Privacy Policy | Terms of Service
+              © 2024 Hotel Dev . All rights reserved. | Privacy Policy | Terms of Service
             </div>
             <div className="text-premium-navy-foreground/60 text-sm">
               Designed with ❤️ for hospitality excellence
