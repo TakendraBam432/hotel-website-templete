@@ -1,5 +1,17 @@
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+// Add hotelInfo object before the handleWhatsAppBooking function
+const hotelInfo = {
+  name: "Hotel Dev Inn", // Replace with your hotel name
+  whatsappNumber: "+9779709153772", // Replace with your WhatsApp number (with country code, no + sign)
+};
+
+// WhatsApp booking function
+const handleWhatsAppBooking = () => {
+    const message = encodeURIComponent("Hi! I'd like to make a reservation at " + hotelInfo.name);
+    window.open(`https://wa.me/${hotelInfo.whatsappNumber}?text=${message}`, '_blank');
+  };
+
 const Footer = () => {
   return <footer className="bg-premium-navy text-premium-navy-foreground">
       <div className="container mx-auto px-4 py-16">
@@ -75,7 +87,7 @@ const Footer = () => {
 
             <div className="mt-6">
               <h4 className="font-semibold mb-3">Reservations</h4>
-              <Button className="btn-luxury w-full">
+              <Button onClick={handleWhatsAppBooking} className="btn-luxury w-full">
                 Book Now
               </Button>
             </div>
