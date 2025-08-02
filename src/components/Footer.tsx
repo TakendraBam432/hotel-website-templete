@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               
-              <span className="text-2xl font-playfair font-semibold">Hotelify</span>
+              <span className="text-2xl font-playfair font-semibold">Hotel Dev Inn</span>
             </div>
             <p className="text-premium-navy-foreground/80 mb-6 leading-relaxed">
               Experience luxury redefined. Where every detail matters and every moment 
