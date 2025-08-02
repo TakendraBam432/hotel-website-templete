@@ -6,7 +6,7 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center mb-16 fade-in-up">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-6">
-              About Hotelify
+              About Hotel Dev Inn
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Since 1985, we've been dedicated to providing exceptional hospitality 
