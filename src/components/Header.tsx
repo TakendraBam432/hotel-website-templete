@@ -6,10 +6,10 @@ const Header = () => {
 
   // EDITABLE: Update hotel info here
   const hotelInfo = {
-    name: "Hotelify",
-    phone: "+1234567890",
+    name: "Hotel Dev Inn",
+    phone: "+9779709153772",
     // Add your hotel's phone number
-    whatsappNumber: "+1234567890" // Add WhatsApp number (with country code)
+    whatsappNumber: "+9779709153772" // Add WhatsApp number (with country code)
   };
   const navigationItems = [{
     name: "Home",
