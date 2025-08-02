@@ -10,8 +10,13 @@ const hotelInfo = {
   name: "Hotel Dev Inn", // Replace with your hotel name
   whatsappNumber: "+9779709153772", // Replace with your WhatsApp number (with country code, no + sign)
 };
+// WhatsApp booking function
+const handleWhats = () => {
+    const message = encodeURIComponent("Hi! i need a room at" + hotelInfo.name);
+    window.open(`https://wa.me/${hotelInfo.whatsappNumber}?text=${message}`, '_blank');
+  };
  // WhatsApp booking function
-  const handleSuiteBooking = () => {
+const handleSuiteBooking = () => {
     const message = encodeURIComponent("Hi! I'd like to make a reservation at " + hotelInfo.name);
     window.open(`https://wa.me/${hotelInfo.whatsappNumber}?text=${message}`, '_blank');
   };
@@ -163,7 +168,7 @@ const Rooms = () => {
             <p className="text-muted-foreground mb-6">
               Can't find the perfect room? Contact our reservations team for personalized recommendations.
             </p>
-            <Button size="lg" className="btn-luxury">
+            <Button onClick={handleWhats} size="lg" className="btn-luxury">
               Contact Reservations
             </Button>
           </div>
