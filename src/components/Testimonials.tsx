@@ -4,27 +4,27 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      location: "New York, USA",
+      name: "Anmol xettri",
+      location: "Dhangadhi, kailali",
       rating: 5,
       text: "Absolutely incredible experience! The attention to detail and level of service exceeded all expectations. The staff went above and beyond to make our anniversary celebration perfect.",
-      avatar: "SJ"
+      avatar: "AX"
     },
     {
       id: 2,
-      name: "David Chen",
-      location: "Singapore",
+      name: "Simran karki",
+      location: "Godawari",
       rating: 5,
       text: "The presidential suite was breathtaking, and the concierge team helped us discover the best local experiences. This hotel truly understands luxury hospitality.",
-      avatar: "DC"
+      avatar: "SK"
     },
     {
       id: 3,
-      name: "Emma Williams",
-      location: "London, UK",
+      name: "sanjog chand",
+      location: "dhangadhi, Kalilai",
       rating: 5,
       text: "From the moment we arrived, we felt like royalty. The spa services were world-class, and the dining options were exceptional. We'll definitely be returning!",
-      avatar: "EW"
+      avatar: "SC"
     }
   ];
 
