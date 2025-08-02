@@ -24,7 +24,7 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <Button size="lg" className="btn-luxury text-lg px-12 py-6 text-base font-semibold">
+            <Button onClick={handleWhatsAppBooking} size="lg" className="btn-luxury text-lg px-12 py-6 text-base font-semibold">
               Book Your Stay
             </Button>
             <Button size="lg" variant="ghost" className="glass-effect text-white border-white/30 hover:bg-white/20 text-lg px-12 py-6 font-medium rounded-full">
