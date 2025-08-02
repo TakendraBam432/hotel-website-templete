@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Users } from "lucide-react";
 import heroImage from "@/assets/hero-hotel.jpg";
+
+// WhatsApp booking function
+const handleWhatsAppBooking = () => {
+    const message = encodeURIComponent("Hi! I'd like to make a reservation at " + hotelInfo.name);
+    window.open(`https://wa.me/${hotelInfo.whatsappNumber}?text=${message}`, '_blank');
+  };
 const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
