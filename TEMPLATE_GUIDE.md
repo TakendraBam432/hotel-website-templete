@@ -18,9 +18,10 @@ Replace these key images in `src/assets/`:
 Edit these components for hotel-specific content:
 
 #### Header (`src/components/Header.tsx`)
-- Hotel logo and name
+- Hotel logo and name (line 10: `name: "YourHotel"`)
+- WhatsApp number (line 12: `whatsappNumber: "+1234567890"`)
+- Phone number (line 11: `phone: "+1234567890"`)
 - Navigation menu items
-- Contact phone number
 
 #### Hero Section (`src/components/Hero.tsx`)
 - Main headline and tagline

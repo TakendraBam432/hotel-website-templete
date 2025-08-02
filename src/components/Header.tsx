@@ -1,9 +1,16 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // EDITABLE: Update hotel info here
+  const hotelInfo = {
+    name: "Hotelify",
+    phone: "+1234567890", // Add your hotel's phone number
+    whatsappNumber: "+1234567890", // Add WhatsApp number (with country code)
+  };
 
   const navigationItems = [
     { name: "Home", href: "#home" },
@@ -11,6 +18,12 @@ const Header = () => {
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
+
+  // WhatsApp booking function
+  const handleWhatsAppBooking = () => {
+    const message = encodeURIComponent("Hi! I'd like to make a reservation at " + hotelInfo.name);
+    window.open(`https://wa.me/${hotelInfo.whatsappNumber}?text=${message}`, '_blank');
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -21,7 +34,7 @@ const Header = () => {
             <div className="w-8 h-8 bg-luxury-gold rounded-full flex items-center justify-center">
               <span className="text-luxury-gold-foreground font-bold text-sm">H</span>
             </div>
-            <span className="text-xl font-playfair font-semibold text-foreground">Hotelify</span>
+            <span className="text-xl font-playfair font-semibold text-foreground">{hotelInfo.name}</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -38,8 +51,12 @@ const Header = () => {
           </nav>
 
           {/* Book Now Button */}
-          <div className="hidden md:block">
-            <Button className="btn-luxury">
+          <div className="hidden md:flex items-center space-x-3">
+            <Button 
+              onClick={handleWhatsAppBooking}
+              className="btn-luxury flex items-center gap-2"
+            >
+              <MessageCircle className="w-4 h-4" />
               Book Now
             </Button>
           </div>
@@ -71,7 +88,11 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="btn-luxury mt-4 w-full">
+              <Button 
+                onClick={handleWhatsAppBooking}
+                className="btn-luxury mt-4 w-full flex items-center justify-center gap-2"
+              >
+                <MessageCircle className="w-4 h-4" />
                 Book Now
               </Button>
             </nav>
