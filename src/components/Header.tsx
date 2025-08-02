@@ -35,9 +35,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-luxury-gold rounded-full flex items-center justify-center">
-              <span className="text-luxury-gold-foreground font-bold text-sm">H</span>
-            </div>
+            
             <span className="text-xl font-playfair font-semibold text-foreground">{hotelInfo.name}</span>
           </div>
 
