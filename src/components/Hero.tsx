@@ -29,40 +29,40 @@ const Hero = () => {
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="btn-luxury text-lg px-8 py-4">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+            <Button size="lg" className="btn-luxury text-lg px-12 py-6 text-base font-semibold">
               Book Your Stay
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary text-lg px-8 py-4">
+            <Button size="lg" variant="ghost" className="glass-effect text-white border-white/30 hover:bg-white/20 text-lg px-12 py-6 font-medium rounded-full">
               Explore Rooms
             </Button>
           </div>
 
           {/* Quick Booking Panel */}
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 max-w-4xl mx-auto border border-white/20">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+          <div className="glass-effect p-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-end">
               <div className="text-left">
-                <label className="block text-sm font-medium mb-2 text-white/80">Check In</label>
-                <div className="flex items-center space-x-2 bg-white/20 rounded-lg px-4 py-3">
-                  <Calendar className="w-5 h-5 text-white/80" />
-                  <span className="text-white">Select Date</span>
+                <label className="block text-sm font-medium mb-3 text-white/90">Check In</label>
+                <div className="flex items-center space-x-3 bg-white/20 rounded-2xl px-5 py-4 hover:bg-white/30 transition-all duration-300">
+                  <Calendar className="w-5 h-5 text-white/90" />
+                  <span className="text-white font-medium">Select Date</span>
                 </div>
               </div>
               <div className="text-left">
-                <label className="block text-sm font-medium mb-2 text-white/80">Check Out</label>
-                <div className="flex items-center space-x-2 bg-white/20 rounded-lg px-4 py-3">
-                  <Calendar className="w-5 h-5 text-white/80" />
-                  <span className="text-white">Select Date</span>
+                <label className="block text-sm font-medium mb-3 text-white/90">Check Out</label>
+                <div className="flex items-center space-x-3 bg-white/20 rounded-2xl px-5 py-4 hover:bg-white/30 transition-all duration-300">
+                  <Calendar className="w-5 h-5 text-white/90" />
+                  <span className="text-white font-medium">Select Date</span>
                 </div>
               </div>
               <div className="text-left">
-                <label className="block text-sm font-medium mb-2 text-white/80">Guests</label>
-                <div className="flex items-center space-x-2 bg-white/20 rounded-lg px-4 py-3">
-                  <Users className="w-5 h-5 text-white/80" />
-                  <span className="text-white">2 Adults</span>
+                <label className="block text-sm font-medium mb-3 text-white/90">Guests</label>
+                <div className="flex items-center space-x-3 bg-white/20 rounded-2xl px-5 py-4 hover:bg-white/30 transition-all duration-300">
+                  <Users className="w-5 h-5 text-white/90" />
+                  <span className="text-white font-medium">2 Adults</span>
                 </div>
               </div>
-              <Button className="btn-luxury h-12">
+              <Button className="btn-luxury h-14 text-base font-semibold">
                 Check Availability
               </Button>
             </div>

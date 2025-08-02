@@ -142,39 +142,47 @@ All colors MUST be HSL for consistency.
 }
 
 @layer components {
-  /* Premium Button Variants */
+  /* Modern Luxury Button Variants */
   .btn-luxury {
-    @apply bg-gradient-to-r from-[var(--gradient-gold)] text-[hsl(var(--luxury-gold-foreground))] 
-           px-8 py-4 rounded-lg font-medium transition-[var(--transition-luxury)] 
-           shadow-[var(--shadow-gold)] hover:shadow-[var(--shadow-luxury)] 
-           hover:scale-105 active:scale-95;
+    @apply bg-gradient-to-r from-luxury-gold to-amber-400 text-luxury-gold-foreground 
+           px-8 py-4 rounded-full font-semibold transition-all duration-500 
+           shadow-lg hover:shadow-2xl hover:scale-110 active:scale-95
+           transform hover:-translate-y-1;
   }
 
   .btn-elegant {
-    @apply bg-[hsl(var(--premium-navy))] text-[hsl(var(--premium-navy-foreground))] 
-           px-8 py-4 rounded-lg font-medium transition-[var(--transition-elegant)] 
-           shadow-[var(--shadow-elegant)] hover:shadow-[var(--shadow-luxury)] 
-           hover:bg-[hsl(var(--premium-navy)/0.9)];
+    @apply bg-premium-navy text-premium-navy-foreground 
+           px-8 py-4 rounded-full font-medium transition-all duration-300 
+           shadow-lg hover:shadow-xl hover:bg-premium-navy/90
+           transform hover:-translate-y-0.5;
   }
 
-  /* Premium Card Styles */
+  /* Modern Glass Card Styles */
   .card-luxury {
-    @apply bg-[hsl(var(--card))] rounded-xl shadow-[var(--shadow-elegant)] 
-           border border-[hsl(var(--border))] transition-[var(--transition-elegant)] 
-           hover:shadow-[var(--shadow-luxury)] hover:-translate-y-1;
+    @apply bg-card/80 backdrop-blur-xl rounded-3xl shadow-xl 
+           border border-border/50 transition-all duration-500 
+           hover:shadow-2xl hover:-translate-y-2 hover:bg-card/90;
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl;
   }
 
   /* Hero Overlay */
   .hero-overlay {
-    background: var(--gradient-hero);
+    @apply bg-gradient-to-br from-black/50 via-transparent to-black/60;
   }
 
-  /* Scroll Animations */
+  /* Modern Scroll Animations */
   .fade-in-up {
-    @apply opacity-0 translate-y-8 transition-[var(--transition-luxury)];
+    @apply opacity-0 translate-y-12 transition-all duration-1000;
   }
 
   .fade-in-up.visible {
     @apply opacity-100 translate-y-0;
+  }
+
+  .modern-gradient {
+    @apply bg-gradient-to-br from-background via-secondary to-background;
   }
 }
