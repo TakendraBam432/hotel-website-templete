@@ -1,17 +1,13 @@
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Footer = () => {
-  return (
-    <footer className="bg-premium-navy text-premium-navy-foreground">
+  return <footer className="bg-premium-navy text-premium-navy-foreground">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-luxury-gold rounded-full flex items-center justify-center">
-                <span className="text-luxury-gold-foreground font-bold">H</span>
-              </div>
+              
               <span className="text-2xl font-playfair font-semibold">Hotelify</span>
             </div>
             <p className="text-premium-navy-foreground/80 mb-6 leading-relaxed">
@@ -35,13 +31,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-playfair font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {["Home", "Rooms & Suites", "Dining", "Spa & Wellness", "Events", "Gallery"].map((link) => (
-                <li key={link}>
+              {["Home", "Rooms & Suites", "Dining", "Spa & Wellness", "Events", "Gallery"].map(link => <li key={link}>
                   <a href="#" className="text-premium-navy-foreground/80 hover:text-luxury-gold transition-colors duration-300">
                     {link}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -49,13 +43,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-playfair font-semibold mb-6">Services</h3>
             <ul className="space-y-3">
-              {["Concierge", "Room Service", "Valet Parking", "Airport Transfer", "Business Center", "Pet Services"].map((service) => (
-                <li key={service}>
+              {["Concierge", "Room Service", "Valet Parking", "Airport Transfer", "Business Center", "Pet Services"].map(service => <li key={service}>
                   <a href="#" className="text-premium-navy-foreground/80 hover:text-luxury-gold transition-colors duration-300">
                     {service}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -102,8 +94,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
