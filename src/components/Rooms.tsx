@@ -5,6 +5,16 @@ import suiteRoom from "@/assets/suite-room.jpg";
 import standardRoom from "@/assets/standard-room.jpg";
 import deluxeRoom from "@/assets/deluxe-room.jpg";
 
+// Add hotelInfo object before the handleWhatsAppBooking function
+const hotelInfo = {
+  name: "Hotel Dev Inn", // Replace with your hotel name
+  whatsappNumber: "+9779709153772", // Replace with your WhatsApp number (with country code, no + sign)
+};
+ // WhatsApp booking function
+  const handleSuiteBooking = () => {
+    const message = encodeURIComponent("Hi! I'd like to make a reservation at " + hotelInfo.name);
+    window.open(`https://wa.me/${hotelInfo.whatsappNumber}?text=${message}`, '_blank');
+  };
 const Rooms = () => {
   const rooms = [
     {
@@ -140,7 +150,7 @@ const Rooms = () => {
                   </div>
 
                   {/* Book Button */}
-                  <Button className="w-full btn-elegant">
+                  <Button onClick={handleSuiteBooking} className="w-full btn-elegant">
                     Book This Room
                   </Button>
                 </div>
