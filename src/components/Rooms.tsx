@@ -12,7 +12,7 @@ const hotelInfo = {
 };
 // WhatsApp booking function
 const handleWhats = () => {
-    const message = encodeURIComponent("Hi! i need a room at" + hotelInfo.name);
+    const message = encodeURIComponent("Hi! i need a room at " + hotelInfo.name);
     window.open(`https://wa.me/${hotelInfo.whatsappNumber}?text=${message}`, '_blank');
   };
  // WhatsApp booking function
