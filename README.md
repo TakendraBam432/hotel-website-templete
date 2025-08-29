@@ -70,4 +70,4 @@ Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Contact me here: [Setting up a custom domain](https://titktok.com/@takendrabam7)
+Contact me here: [Tiktok](https://tiktok.com/@takendrabam7)
